@@ -779,106 +779,182 @@
         </div>
       </div>
 
-      <!-- Superación de Meta Destacada: Atención Médica VBG -->
-      <div class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-2xl p-5 shadow-bento flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <div class="flex items-center gap-3">
-          <div class="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center text-white flex-shrink-0">
-            <i data-lucide="award" class="w-6 h-6"></i>
-          </div>
-          <div>
+      <!-- Grid 2x2 Bento Cards IRC (Estructura idéntica a CARE) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- BENTO CARD 1: VBG (C-CA19) -->
+        <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-bento">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
             <div class="flex items-center gap-2">
-              <span class="text-xs uppercase font-bold tracking-wider text-emerald-100">Indicador Estrella Sobrepasado</span>
-              <span class="px-2 py-0.2 bg-white text-emerald-800 text-[10px] font-black rounded-full">473,3% DE CUMPLIMIENTO</span>
+              <span class="w-7 h-7 rounded-lg bg-yellow-100 text-yellow-800 flex items-center justify-center">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </span>
+              <div>
+                <h3 class="font-heading font-bold text-sm text-slate-900">VBG — Violencia Basada en Género</h3>
+                <p class="text-[10px] text-slate-500 line-clamp-1 italic">Number of individuals who received life‑saving protection support through newly established or strengthened violence prevention and risk‑mitigation mechanisms</p>
+                <span class="text-[9px] text-slate-400 font-mono">Indicador Oficial C-CA19</span>
+              </div>
             </div>
-            <h3 class="text-base sm:text-lg font-heading font-extrabold">Atención Médica a Sobrevivientes de VBG</h3>
-            <p class="text-xs text-emerald-100">71 personas atendidas oportunamente frente a una meta planificada de 15.</p>
+            <div class="text-right">
+              <span class="text-xs font-bold text-yellow-700">37,6% Total</span>
+              <span class="block text-[10px] text-slate-400">1.392 / 3.703</span>
+            </div>
           </div>
-        </div>
-        <div class="bg-white/10 backdrop-blur-md px-4 py-2.5 rounded-xl border border-white/20 self-stretch sm:self-auto text-center sm:text-right">
-          <span class="text-2xl sm:text-3xl font-heading font-black">71 / 15</span>
-          <span class="block text-[10px] text-emerald-100 font-medium">Meta superada en +373%</span>
-        </div>
-      </div>
 
-      <!-- Matriz Completa de Indicadores IRC (Bento Grid) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        
-        <!-- Indicador 1: MPCA Hogares -->
-        <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-bento">
-          <div class="flex justify-between items-start mb-2">
-            <span class="text-xs font-bold text-slate-700">MPCA Hogares Asistidos</span>
-            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">69,6%</span>
+          <!-- Sub-indicadores list -->
+          <div class="space-y-3.5">
+            <div>
+              <div class="flex justify-between text-xs mb-1">
+                <span class="font-medium text-slate-700">Sensibilizaciones en protección y VBG (personas)</span>
+                <span class="font-bold text-slate-900">1.392 <span class="text-slate-400 font-normal">/ 3.703</span> <span class="text-amber-700 font-semibold">(37,6%)</span></span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                <div class="bg-yellow-500 h-2 rounded-full" style="width: 37.6%"></div>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-amber-50/60 border border-amber-200/70 text-[11px] text-slate-600">
+              <span class="font-semibold text-slate-800">Despliegue comunitario:</span> Talleres masivos y sesiones comunitarias de mitigación de riesgos en municipios priorizados.
+            </div>
           </div>
-          <div class="text-2xl font-heading font-extrabold text-slate-900 mb-1">912 <span class="text-xs text-slate-400 font-normal">/ 1.310 Meta</span></div>
-          <div class="w-full bg-slate-100 rounded-full h-2 mb-2">
-            <div class="bg-emerald-500 h-2 rounded-full" style="width: 69.6%"></div>
-          </div>
-          <p class="text-[11px] text-slate-500">Resta entregar 398 apoyos para el 100% (programado en Septiembre).</p>
         </div>
 
-        <!-- Indicador 2: VBG Sensibilizaciones -->
-        <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-bento">
-          <div class="flex justify-between items-start mb-2">
-            <span class="text-xs font-bold text-slate-700">VBG Sensibilizaciones</span>
-            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-800">37,6%</span>
+        <!-- BENTO CARD 2: MPCA - Hito Destacado -->
+        <div class="bg-white rounded-2xl p-5 border border-emerald-200/90 shadow-bento relative overflow-hidden">
+          <div class="absolute top-0 right-0 px-3 py-1 bg-emerald-500 text-white text-[10px] font-bold rounded-bl-xl uppercase tracking-wider">
+            ★ Ritmo Sólido
           </div>
-          <div class="text-2xl font-heading font-extrabold text-slate-900 mb-1">1.392 <span class="text-xs text-slate-400 font-normal">/ 3.703 Meta</span></div>
-          <div class="w-full bg-slate-100 rounded-full h-2 mb-2">
-            <div class="bg-amber-500 h-2 rounded-full" style="width: 37.6%"></div>
+          <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                <i data-lucide="coins" class="w-4 h-4"></i>
+              </span>
+              <div>
+                <h3 class="font-heading font-bold text-sm text-slate-900">Transferencias Monetarias MPCA</h3>
+                <p class="text-[10px] text-emerald-800 line-clamp-1 italic">Number of households having received Multi-Purpose Cash (MPC)</p>
+                <span class="text-[9px] text-slate-400 font-mono">Indicador C-CA1-MPC.a</span>
+              </div>
+            </div>
+            <div class="text-right mr-16">
+              <span class="text-xs font-bold text-emerald-700">69,6% Meta</span>
+              <span class="block text-[10px] text-slate-400">912 / 1.310 Hogares</span>
+            </div>
           </div>
-          <p class="text-[11px] text-slate-500">Talleres comunitarios masivos en municipios priorizados.</p>
+
+          <div class="p-4 rounded-xl bg-emerald-50/60 border border-emerald-100 mb-3">
+            <div class="flex items-baseline justify-between mb-2">
+              <span class="text-xs font-semibold text-emerald-900">Entrega MPCA a Hogares</span>
+              <span class="text-xl font-heading font-black text-emerald-700">69,6%</span>
+            </div>
+            <div class="w-full bg-emerald-200/60 rounded-full h-2.5 overflow-hidden mb-2">
+              <div class="bg-emerald-600 h-2.5 rounded-full transition-all duration-700" style="width: 69.6%"></div>
+            </div>
+            <p class="text-[11px] text-emerald-800 font-medium">
+              912 hogares alcanzados. Restan 398 transferencias programadas para cierre en Septiembre.
+            </p>
+          </div>
+
+          <div class="text-[11px] text-slate-500 flex items-center gap-1.5">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i>
+            Excelente ejecución operativa de entregas directas en terreno.
+          </div>
         </div>
 
-        <!-- Indicador 3: Gestión de Casos -->
+        <!-- BENTO CARD 3: PROTECCIÓN (C-CA11 y C-CA16) -->
         <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-bento">
-          <div class="flex justify-between items-start mb-2">
-            <span class="text-xs font-bold text-slate-700">Gestión de Casos VBG/Prot.</span>
-            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">52,7%</span>
+          <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center">
+                <i data-lucide="users" class="w-4 h-4"></i>
+              </span>
+              <div>
+                <h3 class="font-heading font-bold text-sm text-slate-900">Protección Integral y Gestión de Casos</h3>
+                <p class="text-[10px] text-slate-500 line-clamp-1 italic">Number of people receiving violence psycho-social support and/or violence case management</p>
+                <span class="text-[9px] text-slate-400 font-mono">Indicadores C-CA11 y C-CA16</span>
+              </div>
+            </div>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
+              Multicomponente
+            </span>
           </div>
-          <div class="text-2xl font-heading font-extrabold text-slate-900 mb-1">158 <span class="text-xs text-slate-400 font-normal">/ 300 Meta</span></div>
-          <div class="w-full bg-slate-100 rounded-full h-2 mb-2">
-            <div class="bg-emerald-500 h-2 rounded-full" style="width: 52.7%"></div>
+
+          <div class="space-y-3.5">
+            <div>
+              <div class="flex justify-between text-xs mb-1">
+                <span class="font-medium text-slate-700">Gestión de Casos VBG & Protección</span>
+                <span class="font-bold text-slate-900">158 <span class="text-slate-400 font-normal">/ 300</span> <span class="text-emerald-700 font-semibold">(52,7%)</span></span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                <div class="bg-indigo-500 h-2 rounded-full" style="width: 52.7%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs mb-1">
+                <span class="font-medium text-slate-700">Sensibilizaciones en Protección</span>
+                <span class="font-bold text-slate-900">393 <span class="text-slate-400 font-normal">/ 1.562</span> <span class="text-amber-700 font-semibold">(25,2%)</span></span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                <div class="bg-amber-500 h-2 rounded-full" style="width: 25.2%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs mb-1">
+                <span class="font-medium text-slate-700">Cash de Protección Especializada</span>
+                <span class="font-bold text-slate-900">11 <span class="text-slate-400 font-normal">/ 104</span> <span class="text-slate-600 font-semibold">(10,6%)</span></span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                <div class="bg-slate-400 h-2 rounded-full" style="width: 10.6%"></div>
+              </div>
+            </div>
           </div>
-          <p class="text-[11px] text-slate-500">Atención psicosocial y jurídica individualizada.</p>
         </div>
 
-        <!-- Indicador 4: Sensibilizaciones Protección -->
+        <!-- BENTO CARD 4: SALUD PRIMARIA & BRIGADAS MÓVILES (C-CA1-H.8) -->
         <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-bento">
-          <div class="flex justify-between items-start mb-2">
-            <span class="text-xs font-bold text-slate-700">Sensibilizaciones Protección</span>
-            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-800">25,2%</span>
+          <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center">
+                <i data-lucide="activity" class="w-4 h-4"></i>
+              </span>
+              <div>
+                <h3 class="font-heading font-bold text-sm text-slate-900">Salud Primaria & Brigadas Móviles</h3>
+                <p class="text-[10px] text-slate-500 line-clamp-1 italic">Number of primary healthcare consultations provided</p>
+                <span class="text-[9px] text-slate-400 font-mono">Indicador C-CA1-H.8</span>
+              </div>
+            </div>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-teal-50 text-teal-700 border border-teal-200">
+              En Brigadas
+            </span>
           </div>
-          <div class="text-2xl font-heading font-extrabold text-slate-900 mb-1">393 <span class="text-xs text-slate-400 font-normal">/ 1.562 Meta</span></div>
-          <div class="w-full bg-slate-100 rounded-full h-2 mb-2">
-            <div class="bg-amber-500 h-2 rounded-full" style="width: 25.2%"></div>
-          </div>
-          <p class="text-[11px] text-slate-500">Jornadas programadas durante brigadas intersectoriales.</p>
-        </div>
 
-        <!-- Indicador 5: Cash Protección -->
-        <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-bento">
-          <div class="flex justify-between items-start mb-2">
-            <span class="text-xs font-bold text-slate-700">Cash Protección Especializada</span>
-            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-700">10,6%</span>
-          </div>
-          <div class="text-2xl font-heading font-extrabold text-slate-900 mb-1">11 <span class="text-xs text-slate-400 font-normal">/ 104 Meta</span></div>
-          <div class="w-full bg-slate-100 rounded-full h-2 mb-2">
-            <div class="bg-slate-400 h-2 rounded-full" style="width: 10.6%"></div>
-          </div>
-          <p class="text-[11px] text-slate-500">Desembolsos asociados a casos de alto riesgo en Q4.</p>
-        </div>
+          <div class="space-y-3.5">
+            <div>
+              <div class="flex justify-between text-xs mb-1">
+                <span class="font-medium text-slate-700">Consultas de Atención en Salud Primaria y SSR</span>
+                <span class="font-bold text-slate-900">8.237 <span class="text-slate-400 font-normal">/ 20.871</span> <span class="text-teal-700 font-semibold">(39,5%)</span></span>
+              </div>
+              <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                <div class="bg-teal-600 h-2 rounded-full" style="width: 39.5%"></div>
+              </div>
+            </div>
 
-        <!-- Indicador 6: Salud Consultas -->
-        <div class="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-bento">
-          <div class="flex justify-between items-start mb-2">
-            <span class="text-xs font-bold text-slate-700">Consultas Médicas (Salud)</span>
-            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 text-blue-800">39,5%</span>
+            <!-- Hito Destacado VBG Médica -->
+            <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-[11px]">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-emerald-900 flex items-center gap-1">
+                  <i data-lucide="award" class="w-3.5 h-3.5 text-emerald-600"></i>
+                  Atención Médica a Sobrevivientes VBG
+                </span>
+                <span class="px-1.5 py-0.5 rounded-full bg-emerald-200 text-emerald-900 font-extrabold text-[10px]">
+                  473,3% Meta
+                </span>
+              </div>
+              <p class="text-emerald-800 text-[10px] italic mb-1">Number of violence survivors receiving medical assistance, including clinical management of rape</p>
+              <p class="text-slate-600 font-medium"><strong>71 personas atendidas</strong> frente a una meta planificada de 15 (+373% superado).</p>
+            </div>
           </div>
-          <div class="text-2xl font-heading font-extrabold text-slate-900 mb-1">8.237 <span class="text-xs text-slate-400 font-normal">/ 20.871 Meta</span></div>
-          <div class="w-full bg-slate-100 rounded-full h-2 mb-2">
-            <div class="bg-blue-600 h-2 rounded-full" style="width: 39.5%"></div>
-          </div>
-          <p class="text-[11px] text-slate-500">El mayor volumen asistencial de salud (12.634 restantes proyectadas).</p>
         </div>
 
       </div>
