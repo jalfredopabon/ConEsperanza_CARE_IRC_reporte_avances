@@ -134,17 +134,17 @@
   <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm backdrop-blur-md bg-white/95">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5">
       <!-- Logos & Consortium Identity -->
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
-        <div class="flex items-center gap-3">
-          <div class="flex items-center gap-1.5 bg-white px-2 py-1 rounded-2xl border border-slate-200/90 shadow-sm">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+        <div class="flex items-center gap-3 shrink-0">
+          <div class="flex items-center gap-1.5 bg-white px-2 py-1 rounded-2xl border border-slate-200/90 shadow-sm shrink-0">
             <div class="w-8 h-8 rounded-xl bg-[#E36F1E]/10 border border-[#E36F1E]/20 flex items-center justify-center p-1 hover:scale-105 transition-transform" title="CARE Colombia">
               <img src="care_logo.svg" alt="CARE" class="w-full h-full object-contain" />
             </div>
             <div class="w-8 h-8 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center p-1 hover:scale-105 transition-transform" title="IRC (International Rescue Committee)">
               <img src="irc_logo.svg" alt="IRC" class="w-full h-full object-contain" />
             </div>
-            <div class="w-8 h-8 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center p-1 hover:scale-105 transition-transform" title="OCHA / Fondo Humanitario de Colombia">
-              <img src="onu_logo.svg" alt="OCHA ONU" class="w-full h-full object-contain" />
+            <div class="w-8 h-8 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center p-1 hover:scale-105 transition-transform" title="OCHA / RHPF LAC">
+              <img src="onu_logo.svg" alt="RHPF LAC OCHA" class="w-full h-full object-contain" />
             </div>
           </div>
           <div>
@@ -154,35 +154,35 @@
               </h1>
             </div>
             <p class="text-[11px] sm:text-xs text-slate-500 font-medium line-clamp-1">
-              Fondo Humanitario de Colombia • Consorcio CARE Colombia & IRC
+              Fondo Humanitario RHPF LAC • Consorcio CARE & IRC
             </p>
           </div>
         </div>
 
-        <!-- Badges & Status Pills + Botón Guardar PDF -->
-        <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
-          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-50 text-blue-700 border border-blue-200/80">
+        <!-- Badges & Status Pills + Botón Guardar PDF (TODO EN UN SOLO NIVEL HORIZONTAL) -->
+        <div class="flex items-center gap-1.5 sm:gap-2 shrink-0 flex-nowrap overflow-x-auto">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-50 text-blue-700 border border-blue-200/80 whitespace-nowrap">
             <i data-lucide="calendar" class="w-3.5 h-3.5 text-blue-600"></i>
             Corte: 31 Ago 2026
           </span>
-          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/80">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/80 whitespace-nowrap">
             <i data-lucide="clock" class="w-3.5 h-3.5 text-emerald-600"></i>
             Mayo — Nov 2026
           </span>
-          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-orange-50 text-orange-700 border border-orange-200/80">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-orange-50 text-orange-700 border border-orange-200/80 whitespace-nowrap">
             <span class="w-1.5 h-1.5 rounded-full bg-[#E36F1E] animate-pulse"></span>
             Mes 4 de 7 (57%)
           </span>
 
-          <!-- Dropdown / Botones de Exportar a PDF (Ocultos al imprimir) -->
-          <div class="relative inline-block no-print ml-1">
+          <!-- Dropdown / Botones de Exportar a PDF en el mismo nivel -->
+          <div class="relative inline-block no-print ml-1 shrink-0">
             <div class="flex items-center bg-slate-900 text-white rounded-xl shadow-sm hover:bg-slate-800 transition-all text-xs font-semibold overflow-hidden border border-slate-700">
-              <button onclick="printCurrentTab()" title="Guardar la pestaña actual en PDF" class="flex items-center gap-1.5 px-3 py-1.5 hover:bg-slate-800 transition-colors">
+              <button onclick="printCurrentTab()" title="Guardar la pestaña actual en PDF" class="flex items-center gap-1.5 px-3 py-1.5 hover:bg-slate-800 transition-colors whitespace-nowrap">
                 <i data-lucide="printer" class="w-3.5 h-3.5 text-orange-400"></i>
                 <span>PDF Vista</span>
               </button>
               <div class="w-px h-5 bg-slate-700"></div>
-              <button onclick="printAllTabs()" title="Guardar el reporte completo (4 pestañas) en PDF" class="flex items-center gap-1 px-2.5 py-1.5 bg-slate-800/80 hover:bg-slate-700 transition-colors text-[11px] text-slate-200">
+              <button onclick="printAllTabs()" title="Guardar el reporte completo (4 pestañas) en PDF" class="flex items-center gap-1 px-2.5 py-1.5 bg-slate-800/80 hover:bg-slate-700 transition-colors text-[11px] text-slate-200 whitespace-nowrap">
                 <i data-lucide="file-text" class="w-3 h-3 text-blue-400"></i>
                 <span>Todo (4 Pág)</span>
               </button>
@@ -200,24 +200,24 @@
     <section class="mb-6">
       <div class="bg-white p-1.5 rounded-2xl border border-slate-200 shadow-sm flex overflow-x-auto custom-scrollbar gap-1">
         <button onclick="switchTab('consolidado')" id="tab-btn-consolidado" class="tab-btn tab-active flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 whitespace-nowrap flex-1">
-          <img src="onu_logo.svg" alt="OCHA" class="w-4 h-4 object-contain brightness-0 invert" />
-          <span>1. Consorcio Consolidado</span>
-          <span class="hidden md:inline text-[10px] px-1.5 py-0.2 rounded-full bg-white/20 text-white font-medium">OCHA</span>
+          <img src="onu_logo.svg" alt="RHPF LAC OCHA" class="w-4 h-4 object-contain brightness-0 invert" />
+          <span>1. Consorcio</span>
+          <span class="hidden md:inline text-[10px] px-1.5 py-0.2 rounded-full bg-white/20 text-white font-medium">Consolidado</span>
         </button>
         <button onclick="switchTab('care')" id="tab-btn-care" class="tab-btn text-slate-600 hover:text-slate-900 hover:bg-slate-50 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 whitespace-nowrap flex-1">
           <img src="care_logo.svg" alt="CARE" class="w-4 h-4 object-contain" />
-          <span>2. CARE Colombia</span>
-          <span class="hidden md:inline text-[10px] px-1.5 py-0.2 rounded-full bg-orange-100 text-orange-800 font-medium">Líder</span>
+          <span>2. CARE</span>
+          <span class="hidden md:inline text-[10px] px-1.5 py-0.2 rounded-full bg-orange-100 text-orange-800 font-medium">Socio</span>
         </button>
         <button onclick="switchTab('irc')" id="tab-btn-irc" class="tab-btn text-slate-600 hover:text-slate-900 hover:bg-slate-50 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 whitespace-nowrap flex-1">
           <img src="irc_logo.svg" alt="IRC" class="w-4 h-4 object-contain" />
-          <span>3. IRC Socio</span>
-          <span class="hidden md:inline text-[10px] px-1.5 py-0.2 rounded-full bg-yellow-100 text-slate-900 font-medium">Implementador</span>
+          <span>3. IRC</span>
+          <span class="hidden md:inline text-[10px] px-1.5 py-0.2 rounded-full bg-yellow-100 text-slate-900 font-medium">Socio</span>
         </button>
         <button onclick="switchTab('proyecciones')" id="tab-btn-proyecciones" class="tab-btn text-slate-600 hover:text-slate-900 hover:bg-slate-50 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 whitespace-nowrap flex-1">
           <i data-lucide="trending-up" class="w-4 h-4 text-emerald-500"></i>
-          <span>4. Ruta Crítica (Sep-Nov)</span>
-          <span class="hidden md:inline text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-100 text-emerald-800 font-medium">100% Plan</span>
+          <span>4. Ruta Crítica</span>
+          <span class="hidden md:inline text-[10px] px-1.5 py-0.2 rounded-full bg-emerald-100 text-emerald-800 font-medium">Sep-Nov</span>
         </button>
       </div>
     </section>
@@ -228,10 +228,10 @@
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
         <div>
           <h2 class="text-lg sm:text-xl font-heading font-bold text-slate-900 flex items-center gap-2">
-            <span>Visión Macro del Donante OCHA</span>
-            <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 border border-blue-200">Fondo Humanitario</span>
+            <span>Consorcio ConEsperanza — Reporte Consolidado</span>
+            <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 border border-blue-200">RHPF LAC • OCHA</span>
           </h2>
-          <p class="text-xs text-slate-500">Avance consolidado de los componentes programáticos conjuntos CARE + IRC</p>
+          <p class="text-xs text-slate-500">Avance consolidado conjunto de los socios implementadores CARE Colombia & IRC</p>
         </div>
         <div class="flex items-center gap-2 self-start sm:self-auto">
           <span class="text-xs text-slate-600 font-medium">Cumplimiento Global:</span>
@@ -472,7 +472,7 @@
                 <div class="flex items-center justify-between mb-2">
                   <div class="flex items-center gap-2">
                     <span class="w-3 h-3 rounded-full bg-[#E36F1E]"></span>
-                    <span class="text-xs font-bold text-slate-900">CARE Colombia (Líder)</span>
+                    <span class="text-xs font-bold text-slate-900">CARE Colombia (Implementador)</span>
                   </div>
                   <span class="text-xs font-bold text-orange-700">66,2%</span>
                 </div>
@@ -524,7 +524,7 @@
             <div>
               <div class="flex items-center gap-2">
                 <h2 class="text-lg sm:text-xl font-heading font-extrabold text-slate-900">CARE Colombia</h2>
-                <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-orange-100 text-orange-800 border border-orange-200">Agencia Líder</span>
+                <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-orange-100 text-orange-800 border border-orange-200">Socio Implementador</span>
               </div>
               <p class="text-xs text-slate-500">Monitoreo detallado de indicadores contractuales y avance de actividades</p>
             </div>
@@ -755,10 +755,10 @@
             </div>
             <div>
               <div class="flex items-center gap-2">
-                <h2 class="text-lg sm:text-xl font-heading font-extrabold text-white">International Rescue Committee</h2>
+                <h2 class="text-lg sm:text-xl font-heading font-extrabold text-white">IRC Colombia</h2>
                 <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-yellow-400/20 text-yellow-300 border border-yellow-400/30">Socio Implementador</span>
               </div>
-              <p class="text-xs text-slate-300">Despliegue operativo y atención humanitaria directa en terreno</p>
+              <p class="text-xs text-slate-300">International Rescue Committee • Despliegue operativo y atención directa en terreno</p>
             </div>
           </div>
           <!-- IRC Quick Stats -->
