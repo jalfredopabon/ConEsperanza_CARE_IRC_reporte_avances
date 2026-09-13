@@ -167,11 +167,11 @@
           </span>
           <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/80 whitespace-nowrap">
             <i data-lucide="clock" class="w-3.5 h-3.5 text-emerald-600"></i>
-            Mayo — Nov 2026
+            Junio — Nov 2026
           </span>
           <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-orange-50 text-orange-700 border border-orange-200/80 whitespace-nowrap">
             <span class="w-1.5 h-1.5 rounded-full bg-[#E36F1E] animate-pulse"></span>
-            Mes 4 de 7 (57%)
+            Mes 3 de 6 (50%)
           </span>
 
           <!-- Dropdown / Botones de Exportar a PDF en el mismo nivel -->
@@ -556,7 +556,8 @@
               </span>
               <div>
                 <h3 class="font-heading font-bold text-sm text-slate-900">VBG — Violencia Basada en Género</h3>
-                <span class="text-[10px] text-slate-400 font-mono">Indicador Oficial C-CA19</span>
+                <p class="text-[10px] text-slate-500 line-clamp-1 italic">Number of individuals who received life‑saving protection support through newly established or strengthened violence prevention and risk‑mitigation mechanisms</p>
+                <span class="text-[9px] text-slate-400 font-mono">Indicador Oficial C-CA19</span>
               </div>
             </div>
             <div class="text-right">
@@ -611,7 +612,8 @@
               </span>
               <div>
                 <h3 class="font-heading font-bold text-sm text-slate-900">Transferencias Monetarias MPCA</h3>
-                <span class="text-[10px] text-slate-400 font-mono">Indicador C-CA1-MPC.a</span>
+                <p class="text-[10px] text-emerald-800 line-clamp-1 italic">Number of households having received Multi-Purpose Cash (MPC)</p>
+                <span class="text-[9px] text-slate-400 font-mono">Indicador C-CA1-MPC.a</span>
               </div>
             </div>
             <div class="text-right mr-16">
@@ -648,7 +650,8 @@
               </span>
               <div>
                 <h3 class="font-heading font-bold text-sm text-slate-900">Protección Integral y Espacios Seguros</h3>
-                <span class="text-[10px] text-slate-400 font-mono">Indicadores C-CA11 y C-CA16</span>
+                <p class="text-[10px] text-slate-500 line-clamp-1 italic">Number of people receiving violence psycho-social support and/or violence case management</p>
+                <span class="text-[9px] text-slate-400 font-mono">Indicadores C-CA11 y C-CA16</span>
               </div>
             </div>
             <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
@@ -667,16 +670,15 @@
               </div>
             </div>
 
-            <!-- Espacios Seguros Callout -->
+            <!-- Espacios Seguros -->
             <div class="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
               <div class="flex justify-between text-xs mb-1">
-                <span class="font-semibold text-slate-800">Espacios Seguros (Meta: 5.400)</span>
-                <span class="font-bold text-slate-500">0 alcanzados a Agosto</span>
+                <span class="font-semibold text-slate-800">Espacios Seguros</span>
+                <span class="font-bold text-slate-500">0 <span class="text-slate-400 font-normal">/ 5.400</span> <span class="text-slate-500 font-semibold">(0,0%)</span></span>
               </div>
-              <p class="text-[11px] text-amber-700 bg-amber-50 p-2 rounded-lg border border-amber-200/80 mt-1.5 flex items-start gap-1.5">
-                <i data-lucide="alert-triangle" class="w-3.5 h-3.5 text-amber-600 flex-shrink-0 mt-0.5"></i>
-                <span><strong>Plan de aceleración activo:</strong> Inicio masivo programado para octubre con 4.000 participantes simultáneos en 8 sedes comunitarias.</span>
-              </p>
+              <div class="w-full bg-slate-200 rounded-full h-2 overflow-hidden">
+                <div class="bg-slate-400 h-2 rounded-full" style="width: 0%"></div>
+              </div>
             </div>
 
             <div>
@@ -700,7 +702,8 @@
               </span>
               <div>
                 <h3 class="font-heading font-bold text-sm text-slate-900">Salud Primaria & SSR</h3>
-                <span class="text-[10px] text-slate-400 font-mono">Indicador C-CA1-H.8</span>
+                <p class="text-[10px] text-slate-500 line-clamp-1 italic">Number of primary healthcare consultations provided</p>
+                <span class="text-[9px] text-slate-400 font-mono">Indicador C-CA1-H.8</span>
               </div>
             </div>
             <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-teal-50 text-teal-700 border border-teal-200">
@@ -931,70 +934,49 @@
             </thead>
             <tbody class="divide-y divide-slate-100 font-medium text-slate-700">
               
-              <!-- Fila 1: Espacios Seguros CARE -->
+              <!-- Fila 1: MPCA CARE -->
               <tr class="hover:bg-slate-50/70 transition-colors">
                 <td class="py-3.5 px-4 font-semibold text-slate-900">
                   <div class="flex items-center gap-2">
                     <span class="w-2 h-2 rounded-full bg-[#E36F1E]"></span>
                     <div>
-                      <span>Espacios Seguros</span>
+                      <span>MPCA Transferencias Hogares</span>
                       <span class="block text-[10px] text-slate-400 font-normal">CARE Colombia</span>
                     </div>
                   </div>
                 </td>
-                <td class="py-3.5 px-3 text-center font-bold text-slate-400">0 (0%)</td>
-                <td class="py-3.5 px-3 text-center font-semibold text-blue-700 bg-blue-50/20">540</td>
-                <td class="py-3.5 px-3 text-center font-bold text-purple-700 bg-purple-50/30">4.000 (Pico)</td>
-                <td class="py-3.5 px-3 text-center font-semibold text-emerald-700 bg-emerald-50/20">860</td>
-                <td class="py-3.5 px-4 text-right font-bold text-slate-900">5.400</td>
-                <td class="py-3.5 px-4 text-center">
-                  <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800">100%</span>
-                </td>
-              </tr>
-
-              <!-- Fila 2: Sensibilizaciones VBG CARE -->
-              <tr class="hover:bg-slate-50/70 transition-colors">
-                <td class="py-3.5 px-4 font-semibold text-slate-900">
-                  <div class="flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-[#E36F1E]"></span>
-                    <div>
-                      <span>Sensibilizaciones VBG</span>
-                      <span class="block text-[10px] text-slate-400 font-normal">CARE Colombia</span>
-                    </div>
-                  </div>
-                </td>
-                <td class="py-3.5 px-3 text-center font-bold text-slate-700">4.083 (51%)</td>
-                <td class="py-3.5 px-3 text-center font-semibold text-blue-700 bg-blue-50/20">2.117</td>
-                <td class="py-3.5 px-3 text-center font-semibold text-purple-700 bg-purple-50/30">1.800</td>
+                <td class="py-3.5 px-3 text-center font-bold text-emerald-700">538 (93,4%)</td>
+                <td class="py-3.5 px-3 text-center font-bold text-blue-700 bg-blue-50/20">38 (Cierre)</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-purple-700 bg-purple-50/30">—</td>
                 <td class="py-3.5 px-3 text-center font-semibold text-emerald-700 bg-emerald-50/20">—</td>
-                <td class="py-3.5 px-4 text-right font-bold text-slate-900">8.000</td>
+                <td class="py-3.5 px-4 text-right font-bold text-slate-900">576</td>
                 <td class="py-3.5 px-4 text-center">
                   <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800">100%</span>
                 </td>
               </tr>
 
-              <!-- Fila 3: Kits Dignidad CARE -->
+              <!-- Fila 2: MPCA IRC -->
               <tr class="hover:bg-slate-50/70 transition-colors">
                 <td class="py-3.5 px-4 font-semibold text-slate-900">
                   <div class="flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-[#E36F1E]"></span>
+                    <span class="w-2 h-2 rounded-full bg-slate-800"></span>
                     <div>
-                      <span>Entrega Kits de Dignidad</span>
-                      <span class="block text-[10px] text-slate-400 font-normal">CARE Colombia</span>
+                      <span>MPCA Transferencias Hogares</span>
+                      <span class="block text-[10px] text-slate-400 font-normal">IRC</span>
                     </div>
                   </div>
                 </td>
-                <td class="py-3.5 px-3 text-center font-bold text-slate-700">3.506 (48,7%)</td>
-                <td class="py-3.5 px-3 text-center font-bold text-blue-700 bg-blue-50/20">4.174 (Despacho)</td>
-                <td class="py-3.5 px-3 text-center font-semibold text-purple-700 bg-purple-50/30">1.920</td>
+                <td class="py-3.5 px-3 text-center font-bold text-emerald-700">912 (69,6%)</td>
+                <td class="py-3.5 px-3 text-center font-bold text-blue-700 bg-blue-50/20">425 (Cierre)</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-purple-700 bg-purple-50/30">—</td>
                 <td class="py-3.5 px-3 text-center font-semibold text-emerald-700 bg-emerald-50/20">—</td>
-                <td class="py-3.5 px-4 text-right font-bold text-slate-900">7.200</td>
+                <td class="py-3.5 px-4 text-right font-bold text-slate-900">1.310</td>
                 <td class="py-3.5 px-4 text-center">
                   <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800">100%</span>
                 </td>
               </tr>
 
-              <!-- Fila 4: Consultas de Salud IRC -->
+              <!-- Fila 3: Consultas de Salud IRC -->
               <tr class="hover:bg-slate-50/70 transition-colors">
                 <td class="py-3.5 px-4 font-semibold text-slate-900">
                   <div class="flex items-center gap-2">
@@ -1015,22 +997,127 @@
                 </td>
               </tr>
 
-              <!-- Fila 5: MPCA IRC -->
+              <!-- Fila 4: Espacios Seguros CARE -->
               <tr class="hover:bg-slate-50/70 transition-colors">
                 <td class="py-3.5 px-4 font-semibold text-slate-900">
                   <div class="flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-slate-800"></span>
+                    <span class="w-2 h-2 rounded-full bg-[#E36F1E]"></span>
                     <div>
-                      <span>MPCA Transferencias Hogares</span>
-                      <span class="block text-[10px] text-slate-400 font-normal">IRC</span>
+                      <span>Espacios Seguros</span>
+                      <span class="block text-[10px] text-slate-400 font-normal">CARE Colombia</span>
                     </div>
                   </div>
                 </td>
-                <td class="py-3.5 px-3 text-center font-bold text-emerald-700">912 (69,6%)</td>
-                <td class="py-3.5 px-3 text-center font-bold text-blue-700 bg-blue-50/20">425 (Cierre)</td>
-                <td class="py-3.5 px-3 text-center font-semibold text-purple-700 bg-purple-50/30">—</td>
+                <td class="py-3.5 px-3 text-center font-bold text-slate-400">0 (0%)</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-blue-700 bg-blue-50/20">540</td>
+                <td class="py-3.5 px-3 text-center font-bold text-purple-700 bg-purple-50/30">4.000 (Pico)</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-emerald-700 bg-emerald-50/20">860</td>
+                <td class="py-3.5 px-4 text-right font-bold text-slate-900">5.400</td>
+                <td class="py-3.5 px-4 text-center">
+                  <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800">100%</span>
+                </td>
+              </tr>
+
+              <!-- Fila 5: Sensibilizaciones VBG CARE -->
+              <tr class="hover:bg-slate-50/70 transition-colors">
+                <td class="py-3.5 px-4 font-semibold text-slate-900">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#E36F1E]"></span>
+                    <div>
+                      <span>Sensibilizaciones VBG</span>
+                      <span class="block text-[10px] text-slate-400 font-normal">CARE Colombia</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3.5 px-3 text-center font-bold text-slate-700">4.083 (51%)</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-blue-700 bg-blue-50/20">2.117</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-purple-700 bg-purple-50/30">1.800</td>
                 <td class="py-3.5 px-3 text-center font-semibold text-emerald-700 bg-emerald-50/20">—</td>
-                <td class="py-3.5 px-4 text-right font-bold text-slate-900">1.310</td>
+                <td class="py-3.5 px-4 text-right font-bold text-slate-900">8.000</td>
+                <td class="py-3.5 px-4 text-center">
+                  <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800">100%</span>
+                </td>
+              </tr>
+
+              <!-- Fila 6: Entrega Kits Emergencia (Kits físicos) CARE -->
+              <tr class="hover:bg-slate-50/70 transition-colors">
+                <td class="py-3.5 px-4 font-semibold text-slate-900">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#E36F1E]"></span>
+                    <div>
+                      <span>Kits de Emergencia (Kits físicos)</span>
+                      <span class="block text-[10px] text-slate-400 font-normal">CARE Colombia</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3.5 px-3 text-center font-bold text-slate-700">982 (40,9%)</td>
+                <td class="py-3.5 px-3 text-center font-bold text-blue-700 bg-blue-50/20">938</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-purple-700 bg-purple-50/30">480</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-emerald-700 bg-emerald-50/20">—</td>
+                <td class="py-3.5 px-4 text-right font-bold text-slate-900">2.400</td>
+                <td class="py-3.5 px-4 text-center">
+                  <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800">100%</span>
+                </td>
+              </tr>
+
+              <!-- Fila 7: Entrega Kits Dignidad (Personas) CARE -->
+              <tr class="hover:bg-slate-50/70 transition-colors">
+                <td class="py-3.5 px-4 font-semibold text-slate-900">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#E36F1E]"></span>
+                    <div>
+                      <span>Kits de Dignidad (Personas)</span>
+                      <span class="block text-[10px] text-slate-400 font-normal">CARE Colombia</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3.5 px-3 text-center font-bold text-slate-700">3.506 (48,7%)</td>
+                <td class="py-3.5 px-3 text-center font-bold text-blue-700 bg-blue-50/20">4.174</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-purple-700 bg-purple-50/30">1.920</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-emerald-700 bg-emerald-50/20">—</td>
+                <td class="py-3.5 px-4 text-right font-bold text-slate-900">7.200</td>
+                <td class="py-3.5 px-4 text-center">
+                  <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800">100%</span>
+                </td>
+              </tr>
+
+              <!-- Fila 8: Gestión de Casos VBG y Protección CARE -->
+              <tr class="hover:bg-slate-50/70 transition-colors">
+                <td class="py-3.5 px-4 font-semibold text-slate-900">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#E36F1E]"></span>
+                    <div>
+                      <span>Gestión de Casos (Protección / VBG)</span>
+                      <span class="block text-[10px] text-slate-400 font-normal">CARE Colombia</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3.5 px-3 text-center font-bold text-slate-700">497 (43,1%)</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-blue-700 bg-blue-50/20">415</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-purple-700 bg-purple-50/30">240</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-emerald-700 bg-emerald-50/20">—</td>
+                <td class="py-3.5 px-4 text-right font-bold text-slate-900">1.152</td>
+                <td class="py-3.5 px-4 text-center">
+                  <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800">100%</span>
+                </td>
+              </tr>
+
+              <!-- Fila 9: Cash de Protección CARE -->
+              <tr class="hover:bg-slate-50/70 transition-colors">
+                <td class="py-3.5 px-4 font-semibold text-slate-900">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#E36F1E]"></span>
+                    <div>
+                      <span>Cash de Protección</span>
+                      <span class="block text-[10px] text-slate-400 font-normal">CARE Colombia</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-3.5 px-3 text-center font-bold text-slate-700">51 (12,7%)</td>
+                <td class="py-3.5 px-3 text-center font-bold text-blue-700 bg-blue-50/20">273</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-purple-700 bg-purple-50/30">79</td>
+                <td class="py-3.5 px-3 text-center font-semibold text-emerald-700 bg-emerald-50/20">—</td>
+                <td class="py-3.5 px-4 text-right font-bold text-slate-900">403</td>
                 <td class="py-3.5 px-4 text-center">
                   <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-800">100%</span>
                 </td>
