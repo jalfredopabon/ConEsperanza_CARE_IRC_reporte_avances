@@ -56,7 +56,7 @@
 </head>
 <body class="bg-[#f0f3f8] text-slate-800 font-sans antialiased h-full overflow-hidden flex select-none">
 <!-- BEGIN: LeftSidebar -->
-<aside class="w-64 bg-white border-r border-slate-200 flex flex-col shrink-0 z-30 transition-all duration-300" id="sidebar">
+<aside class="bg-white border-r border-slate-200 flex flex-col shrink-0 z-30 transition-all duration-300 w-64" id="sidebar">
 <!-- Sidebar Header with Logo & Collapse Button -->
 <div class="h-20 flex items-center justify-between px-4 border-b border-slate-100">
 <div class="flex items-center space-x-3 overflow-hidden whitespace-nowrap" id="sidebar-logo-text">
@@ -75,14 +75,11 @@
 </svg>
 </button>
 </div>
-<!-- ONG Selector in Sidebar -->
-
 <!-- Navigation Section -->
-<nav class="flex-1 py-4 px-3 space-y-1.5 overflow-y-auto custom-scrollbar"><div class="px-3 pb-2 pt-1 text-[11px] font-semibold text-slate-400 uppercase tracking-wider sidebar-label" id="nav-section-title">Menú</div>
-
+<nav class="flex-1 py-4 px-3 space-y-1.5 overflow-y-auto custom-scrollbar" id="sidebar-navigation"><div class="px-3 pb-2 pt-1 text-[11px] font-semibold text-slate-400 uppercase tracking-wider sidebar-label" id="nav-section-title">Menú</div>
 <!-- Item 1: Resumen General (Active) -->
-<a class="flex items-center px-3 py-2.5 text-sm font-semibold text-slate-900 bg-slate-100/90 rounded-xl transition-colors group" href="#">
-<span class="shrink-0 text-slate-700 group-hover:text-slate-900">
+<a class="nav-item flex items-center px-3 py-2.5 text-sm rounded-xl transition-all duration-200 group text-slate-600 hover:text-slate-900 hover:bg-slate-50 font-medium" data-section="resumen" href="#">
+<span class="nav-icon shrink-0 transition-colors text-slate-400">
 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <rect height="7" rx="1.5" stroke-width="2" width="7" x="3" y="3"></rect>
 <rect height="7" rx="1.5" stroke-width="2" width="7" x="14" y="3"></rect>
@@ -90,44 +87,44 @@
 <rect height="7" rx="1.5" stroke-width="2" width="7" x="14" y="14"></rect>
 </svg>
 </span>
-<span class="sidebar-label ml-3 truncate">1. Resumen General</span>
+<span class="sidebar-label ml-3 truncate">Resumen General</span>
 </a>
 <!-- Item 2: MPCA -->
-<a class="flex items-center px-3 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-colors group" href="#">
-<span class="shrink-0 text-slate-400 group-hover:text-slate-600">
+<a class="nav-item flex items-center px-3 py-2.5 text-sm rounded-xl transition-all duration-200 group text-slate-600 hover:text-slate-900 hover:bg-slate-50 font-medium" data-section="mpca" href="#">
+<span class="nav-icon shrink-0 group-hover:text-slate-600 transition-colors text-slate-400">
 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <rect height="12" rx="2" stroke-width="2" width="20" x="2" y="6"></rect>
 <circle cx="12" cy="12" r="2.5" stroke-width="2"></circle>
 </svg>
 </span>
-<span class="sidebar-label ml-3 truncate">2. MPCA (Transferencias)</span>
+<span class="sidebar-label ml-3 truncate">Protección</span>
 </a>
 <!-- Item 3: VBG -->
-<a class="flex items-center px-3 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-colors group" href="#">
-<span class="shrink-0 text-slate-400 group-hover:text-slate-600">
+<a class="nav-item flex items-center px-3 py-2.5 text-sm rounded-xl transition-all duration-200 group text-slate-600 hover:text-slate-900 hover:bg-slate-50 font-medium" data-section="vbg" href="#">
+<span class="nav-icon shrink-0 group-hover:text-slate-600 transition-colors text-slate-400">
 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </span>
-<span class="sidebar-label ml-3 truncate">3. VBG (Violencia Género)</span>
+<span class="sidebar-label ml-3 truncate">Salud</span>
 </a>
 <!-- Item 4: Salud Primaria -->
-<a class="flex items-center px-3 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-colors group" href="#">
-<span class="shrink-0 text-slate-400 group-hover:text-slate-600">
+<a class="nav-item flex items-center px-3 py-2.5 text-sm rounded-xl transition-all duration-200 group text-slate-600 hover:text-slate-900 hover:bg-slate-50 font-medium" data-section="salud" href="#">
+<span class="nav-icon shrink-0 group-hover:text-slate-600 transition-colors text-slate-400">
 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </span>
-<span class="sidebar-label ml-3 truncate">4. Salud Primaria y SSR</span>
+<span class="sidebar-label ml-3 truncate">MPCA</span>
 </a>
 <!-- Item 5: Protección Psicosocial -->
-<a class="flex items-center px-3 py-2.5 text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-xl transition-colors group" href="#">
-<span class="shrink-0 text-slate-400 group-hover:text-slate-600">
+<a class="nav-item flex items-center px-3 py-2.5 text-sm rounded-xl transition-all duration-200 group text-slate-900 bg-slate-100/90 font-semibold" data-section="proteccion" href="#">
+<span class="nav-icon shrink-0 group-hover:text-slate-600 transition-colors text-slate-700">
 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </span>
-<span class="sidebar-label ml-3 truncate">5. Protección Psicosocial</span>
+<span class="sidebar-label ml-3 truncate">VBA</span>
 </a>
 </nav>
 </aside>
@@ -139,32 +136,27 @@
 <div class="flex items-start justify-between gap-6">
 <!-- Expanded Title & Subtitle across the header width -->
 <div class="flex-1 min-w-0 pr-4">
-<h1 class="text-xl font-bold text-slate-900 tracking-tight leading-snug">
+<h1 class="text-xl font-bold text-slate-900 tracking-tight leading-snug" id="header-main-title">
             Respuesta Humanitaria de Emergencia en Colombia • Donante OCHA
           </h1>
-<p class="text-xs sm:text-[13px] text-slate-500 font-medium mt-1 leading-relaxed max-w-4xl">
+<p class="text-xs sm:text-[13px] text-slate-500 font-medium mt-1 leading-relaxed max-w-4xl" id="header-main-subtitle">
             Visión ejecutiva del avance acumulado al corte 31 de Agosto y proyecciones operativas Sep – Nov del Consorcio CARE &amp; IRC.
           </p>
 </div>
 <!-- Actions pushed to top-right corner -->
 <div class="flex items-center space-x-2 shrink-0 pt-0.5">
-<!-- Theme Button -->
-<div class="inline-flex items-center bg-white p-1 rounded-xl shadow-xs border border-slate-200 text-xs font-medium" role="group" aria-label="Idioma"><button class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-900 text-white transition-all shadow-xs" title="Español">ES</button><button class="px-2.5 py-1 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all" title="English">EN</button><button class="px-2.5 py-1 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all" title="Français">FR</button></div>
+<!-- Language Buttons (ES / EN / FR) -->
+<div aria-label="Idioma" class="inline-flex items-center h-9 bg-white p-1 rounded-xl shadow-xs border border-slate-200 text-xs font-medium gap-1 whitespace-nowrap" id="language-selector" role="group"><button class="lang-tab-btn h-full px-3 rounded-lg text-xs font-bold bg-slate-900 text-white shadow-xs flex items-center justify-center transition-all whitespace-nowrap" data-lang="ES" title="Español">ES</button><button class="lang-tab-btn h-full px-3 rounded-lg text-xs font-medium text-slate-500 hover:text-slate-800 flex items-center justify-center transition-all whitespace-nowrap" data-lang="EN" title="English">EN</button><button class="lang-tab-btn h-full px-3 rounded-lg text-xs font-medium text-slate-500 hover:text-slate-800 flex items-center justify-center transition-all whitespace-nowrap" data-lang="FR" title="Français">FR</button></div>
 <!-- Drawer Trigger Button -->
-<button class="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs font-semibold rounded-xl shadow-xs transition-colors" id="btn-open-filter">
-<svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-<span class="">Filtros</span>
-</button>
+<button class="inline-flex items-center h-9 space-x-1.5 px-3 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs font-semibold rounded-xl shadow-xs transition-colors whitespace-nowrap" id="btn-open-filter"><svg class="w-4 h-4 text-slate-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span class="">Filtros</span></button>
 </div>
 </div>
 </header>
 <!-- END: TopBar -->
 <!-- BEGIN: DashboardScrollBody -->
 <main class="flex-1 overflow-y-auto custom-scrollbar px-8 pb-8 pt-2 space-y-4">
-<!-- Toggle Buttons Row: "Únicos" / "Totales" -->
-<div class="flex items-center justify-between w-full"><div class="inline-flex items-center bg-white p-1 rounded-xl shadow-xs border border-slate-200" id="main-ong-selector" role="tablist"><button class="ong-tab-btn px-3 py-1 rounded-lg text-xs font-semibold bg-slate-900 text-white transition-all shadow-xs flex items-center space-x-1.5" data-filter="total"><span class="">Consorcio</span><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span></button><button class="ong-tab-btn px-3 py-1 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all flex items-center" data-filter="care"><span class="">CARE Colombia</span></button><button class="ong-tab-btn px-3 py-1 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all flex items-center" data-filter="irc"><span class="">IRC</span></button></div><div class="inline-flex items-center bg-white p-1 rounded-xl shadow-xs border border-slate-200" role="tablist"><button class="beneficiarios-toggle-btn px-3 py-1 rounded-lg text-xs font-semibold bg-slate-900 text-white transition-all shadow-xs" data-mode="unicos">Únicos</button><button class="beneficiarios-toggle-btn px-3 py-1 rounded-lg text-xs font-medium text-slate-600 hover:text-slate-900 transition-all" data-mode="totales">Totales</button></div></div>
+<!-- Toggle Buttons Row: "Consorcio / CARE / IRC" & "Únicos" / "Totales" -->
+<div class="flex items-center justify-between w-full"><div class="inline-flex items-center h-9 bg-white p-1 rounded-xl shadow-xs border border-slate-200 gap-1 whitespace-nowrap" id="main-ong-selector" role="tablist"><button class="ong-tab-btn h-full px-3.5 rounded-lg text-xs font-semibold bg-slate-900 text-white shadow-xs flex items-center space-x-2 transition-all whitespace-nowrap" data-filter="total"><span class="">Consorcio</span><span class="w-2 h-2 rounded-full bg-emerald-400"></span></button><button class="ong-tab-btn h-full px-3.5 rounded-lg text-xs font-medium text-slate-500 hover:text-slate-800 flex items-center space-x-1.5 transition-all whitespace-nowrap" data-filter="care"><span class="">CARE</span></button><button class="ong-tab-btn h-full px-3.5 rounded-lg text-xs font-medium text-slate-500 hover:text-slate-800 flex items-center space-x-1.5 transition-all whitespace-nowrap" data-filter="irc"><span class="">IRC</span></button></div><div class="inline-flex items-center h-9 bg-white p-1 rounded-xl shadow-xs border border-slate-200 gap-1 whitespace-nowrap" role="tablist"><button class="beneficiarios-toggle-btn h-full px-3.5 rounded-lg text-xs font-semibold bg-slate-900 text-white shadow-xs flex items-center justify-center transition-all whitespace-nowrap" data-mode="unicos">Únicos</button><button class="beneficiarios-toggle-btn h-full px-3.5 rounded-lg text-xs font-medium text-slate-500 hover:text-slate-800 flex items-center justify-center transition-all whitespace-nowrap" data-mode="totales">Totales</button></div></div>
 <!-- BEGIN: 4 Primary KPI Cards Row -->
 <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" data-purpose="kpi-metrics-grid">
 <!-- KPI 1: Meta global actividades -->
@@ -180,7 +172,7 @@
 </div>
 </div>
 <div class="mt-2">
-<div class="text-3xl font-extrabold text-slate-900 tracking-tight">57.747</div>
+<div class="text-3xl font-extrabold text-slate-900 tracking-tight" id="kpi-meta-global-val">57.747</div>
 <div class="mt-3 flex items-center space-x-2 text-xs">
 <span class="px-2 py-0.5 rounded-md font-semibold bg-slate-100 text-slate-700">Target OCHA</span>
 <span class="text-slate-400 font-normal">100% Planificado</span>
@@ -198,12 +190,10 @@
 </div>
 </div>
 <div class="mt-2">
-<div class="text-3xl font-extrabold text-slate-900 tracking-tight">22.854</div>
+<div class="text-3xl font-extrabold text-slate-900 tracking-tight" id="kpi-alcance-val">22.854</div>
 <div class="mt-3 flex items-center space-x-1.5 text-xs">
-<span class="text-rose-600 font-semibold flex items-center">
-                ▲ 39,6%
-              </span>
-<span class="text-slate-400 font-medium">Brecha: 34.893</span>
+<span class="text-rose-600 font-semibold flex items-center" id="kpi-alcance-pct">▲ 39,6%</span>
+<span class="text-slate-400 font-medium" id="kpi-alcance-brecha">Brecha: 34.893</span>
 </div>
 </div>
 </article>
@@ -218,11 +208,9 @@
 </div>
 </div>
 <div class="mt-2">
-<div class="text-3xl font-extrabold text-slate-900 tracking-tight">60.224</div>
+<div class="text-3xl font-extrabold text-slate-900 tracking-tight" id="kpi-proyeccion-val">60.224</div>
 <div class="mt-3 flex items-center space-x-1.5 text-xs">
-<span class="text-emerald-600 font-semibold flex items-center">
-                ▲ 104,3%
-              </span>
+<span class="text-emerald-600 font-semibold flex items-center" id="kpi-proyeccion-pct">▲ 104,3%</span>
 <span class="text-slate-400 font-medium">Meta viable</span>
 </div>
 </div>
@@ -240,9 +228,7 @@
 <div class="mt-2">
 <div class="text-3xl font-extrabold text-slate-900 tracking-tight" id="kpi-beneficiarios-val">14.673</div>
 <div class="mt-3 flex items-center space-x-1.5 text-xs">
-<span class="text-amber-500 font-semibold flex items-center" id="kpi-beneficiarios-pct">
-                ▲ 46,0%
-              </span>
+<span class="text-amber-500 font-semibold flex items-center" id="kpi-beneficiarios-pct">▲ 46,0%</span>
 <span class="text-slate-400 font-medium" id="kpi-beneficiarios-meta">Meta: 31.868</span>
 </div>
 </div>
@@ -256,8 +242,8 @@
 <div>
 <div class="flex items-start justify-between">
 <div>
-<h2 class="text-sm font-bold text-slate-900">Evolución Acumulada y Proyección Trimestral</h2>
-<p class="text-xs text-slate-500 mt-0.5">Ejecución Real Agosto vs Proyección Septiembre – Noviembre</p>
+<h2 class="text-sm font-bold text-slate-900" id="chart-evo-title">Evolución Acumulada y Proyección Trimestral</h2>
+<p class="text-xs text-slate-500 mt-0.5" id="chart-evo-sub">Ejecución Real Agosto vs Proyección Septiembre – Noviembre</p>
 </div>
 </div>
 <!-- Legend -->
@@ -288,7 +274,7 @@
 <!-- Meta target flag/pill indicator -->
 <g transform="translate(562, 58)">
 <circle cx="0" cy="0" fill="#ffffff" r="4.5" stroke="#059669" stroke-width="2.5"></circle>
-<text fill="#059669" font-family="Inter, sans-serif" font-size="10.5" font-weight="700" x="6" y="3.5">Meta: 57.747</text>
+<text fill="#059669" font-family="Inter, sans-serif" font-size="10.5" font-weight="700" id="chart-meta-badge" x="6" y="3.5">Meta: 57.747</text>
 </g>
 <!-- Projection dashed line (from 31 Ago to Nov Final) -->
 <path d="M 175 145 L 305 110 L 435 58 L 560 52" fill="none" stroke="#94a3b8" stroke-dasharray="5,5" stroke-linecap="round" stroke-width="2.5"></path>
@@ -322,9 +308,9 @@
 <div class="flex items-center justify-between text-xs font-semibold">
 <span class="text-slate-700 w-20">MPCA</span>
 <div class="flex-1 mx-3 bg-slate-100 rounded-full h-3 overflow-hidden">
-<div class="bg-[#0284c7] h-3 rounded-full transition-all duration-700" style="width: 76.9%;"></div>
+<div class="bg-[#0284c7] h-3 rounded-full transition-all duration-700" id="sector-bar-mpca" style="width: 76.9%;"></div>
 </div>
-<span class="text-[#0284c7] font-bold w-12 text-right">76,9%</span>
+<span class="text-[#0284c7] font-bold w-12 text-right" id="sector-pct-mpca">76,9%</span>
 </div>
 </div>
 <!-- Sector: VBG -->
@@ -332,9 +318,9 @@
 <div class="flex items-center justify-between text-xs font-semibold">
 <span class="text-slate-700 w-20">VBG</span>
 <div class="flex-1 mx-3 bg-slate-100 rounded-full h-3 overflow-hidden">
-<div class="bg-[#7c3aed] h-3 rounded-full transition-all duration-700" style="width: 46.8%;"></div>
+<div class="bg-[#7c3aed] h-3 rounded-full transition-all duration-700" id="sector-bar-vbg" style="width: 46.8%;"></div>
 </div>
-<span class="text-[#7c3aed] font-bold w-12 text-right">46,8%</span>
+<span class="text-[#7c3aed] font-bold w-12 text-right" id="sector-pct-vbg">46,8%</span>
 </div>
 </div>
 <!-- Sector: Protección -->
@@ -342,9 +328,9 @@
 <div class="flex items-center justify-between text-xs font-semibold">
 <span class="text-slate-700 w-20">Protección</span>
 <div class="flex-1 mx-3 bg-slate-100 rounded-full h-3 overflow-hidden">
-<div class="bg-[#d97706] h-3 rounded-full transition-all duration-700" style="width: 12.4%;"></div>
+<div class="bg-[#d97706] h-3 rounded-full transition-all duration-700" id="sector-bar-prot" style="width: 12.4%;"></div>
 </div>
-<span class="text-[#d97706] font-bold w-12 text-right">12,4%</span>
+<span class="text-[#d97706] font-bold w-12 text-right" id="sector-pct-prot">12,4%</span>
 </div>
 </div>
 <!-- Sector: Salud -->
@@ -352,14 +338,14 @@
 <div class="flex items-center justify-between text-xs font-semibold">
 <span class="text-slate-700 w-20">Salud</span>
 <div class="flex-1 mx-3 bg-slate-100 rounded-full h-3 overflow-hidden">
-<div class="bg-[#059669] h-3 rounded-full transition-all duration-700" style="width: 40.3%;"></div>
+<div class="bg-[#059669] h-3 rounded-full transition-all duration-700" id="sector-bar-salud" style="width: 40.3%;"></div>
 </div>
-<span class="text-[#059669] font-bold w-12 text-right">40,3%</span>
+<span class="text-[#059669] font-bold w-12 text-right" id="sector-pct-salud">40,3%</span>
 </div>
 </div>
 </div>
 <div class="pt-4 border-t border-slate-100 text-[11px] text-slate-400 flex items-center justify-between">
-<span class="">Meta acumulada total: 57.747 asistencias</span>
+<span class="" id="sector-footer-target">Meta acumulada total: 57.747 asistencias</span>
 <span class="font-medium text-slate-500">Corte operativo oficial</span>
 </div>
 </div>
@@ -502,8 +488,8 @@
 </div>
 <!-- END: MainContentWrapper -->
 <!-- BEGIN: FilterSlideOverDrawer -->
-<div class="fixed inset-0 bg-slate-900/40 backdrop-blur-xs z-40 hidden transition-opacity" id="drawer-backdrop"></div>
-<aside class="fixed top-0 right-0 h-full w-80 sm:w-96 bg-white shadow-2xl z-50 transform translate-x-full flex flex-col justify-between transition-transform duration-300" id="filter-drawer">
+<div class="fixed inset-0 bg-slate-900/40 backdrop-blur-xs z-40 transition-opacity hidden" id="drawer-backdrop"></div>
+<aside class="fixed top-0 right-0 h-full w-80 sm:w-96 bg-white shadow-2xl z-50 transform flex flex-col justify-between transition-transform duration-300 translate-x-full" id="filter-drawer">
 <!-- Drawer Header -->
 <div class="p-5 border-b border-slate-200 flex items-center justify-between">
 <div class="flex items-center space-x-2.5">
@@ -640,29 +626,28 @@
       const sidebar = document.getElementById('sidebar');
       const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
       const sidebarLogoText = document.getElementById('sidebar-logo-text');
-      const sidebarOngSelector = document.getElementById('sidebar-ong-selector');
       const navSectionTitle = document.getElementById('nav-section-title');
       const sidebarLabels = document.querySelectorAll('.sidebar-label');
       let isCollapsed = false;
 
-      btnToggleSidebar.addEventListener('click', () => {
-        isCollapsed = !isCollapsed;
-        if (isCollapsed) {
-          sidebar.classList.remove('w-64');
-          sidebar.classList.add('w-18');
-          sidebarLogoText.classList.add('hidden');
-          if (sidebarOngSelector) sidebarOngSelector.classList.add('hidden');
-          navSectionTitle.classList.add('hidden');
-          sidebarLabels.forEach(label => label.classList.add('hidden'));
-        } else {
-          sidebar.classList.remove('w-18');
-          sidebar.classList.add('w-64');
-          sidebarLogoText.classList.remove('hidden');
-          if (sidebarOngSelector) sidebarOngSelector.classList.remove('hidden');
-          navSectionTitle.classList.remove('hidden');
-          sidebarLabels.forEach(label => label.classList.remove('hidden'));
-        }
-      });
+      if (btnToggleSidebar) {
+        btnToggleSidebar.addEventListener('click', () => {
+          isCollapsed = !isCollapsed;
+          if (isCollapsed) {
+            sidebar.classList.remove('w-64');
+            sidebar.classList.add('w-18');
+            sidebarLogoText.classList.add('hidden');
+            if (navSectionTitle) navSectionTitle.classList.add('hidden');
+            sidebarLabels.forEach(label => label.classList.add('hidden'));
+          } else {
+            sidebar.classList.remove('w-18');
+            sidebar.classList.add('w-64');
+            sidebarLogoText.classList.remove('hidden');
+            if (navSectionTitle) navSectionTitle.classList.remove('hidden');
+            sidebarLabels.forEach(label => label.classList.remove('hidden'));
+          }
+        });
+      }
 
       // 2. Filter Slide-Over Drawer Toggle
       const btnOpenFilter = document.getElementById('btn-open-filter');
@@ -673,6 +658,7 @@
       const drawerBackdrop = document.getElementById('drawer-backdrop');
 
       function openDrawer() {
+        if (!drawerBackdrop || !filterDrawer) return;
         drawerBackdrop.classList.remove('hidden');
         setTimeout(() => {
           drawerBackdrop.classList.add('opacity-100');
@@ -681,6 +667,7 @@
       }
 
       function closeDrawer() {
+        if (!drawerBackdrop || !filterDrawer) return;
         filterDrawer.classList.add('translate-x-full');
         drawerBackdrop.classList.remove('opacity-100');
         setTimeout(() => {
@@ -688,13 +675,91 @@
         }, 300);
       }
 
-      btnOpenFilter.addEventListener('click', openDrawer);
-      btnCloseFilter.addEventListener('click', closeDrawer);
-      drawerBackdrop.addEventListener('click', closeDrawer);
-      btnApplyFilters.addEventListener('click', closeDrawer);
+      if (btnOpenFilter) btnOpenFilter.addEventListener('click', openDrawer);
+      if (btnCloseFilter) btnCloseFilter.addEventListener('click', closeDrawer);
+      if (drawerBackdrop) drawerBackdrop.addEventListener('click', closeDrawer);
+      if (btnApplyFilters) btnApplyFilters.addEventListener('click', closeDrawer);
 
-      // 3. ONG Filter Switcher Active State (now located in Sidebar)
+      // 3. Language Selector Toggle (ES / EN / FR)
+      const langButtons = document.querySelectorAll('.lang-tab-btn');
+      langButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          langButtons.forEach(btn => {
+            btn.classList.remove('bg-slate-900', 'text-white', 'shadow-xs', 'font-semibold');
+            btn.classList.add('text-slate-600', 'font-medium');
+          });
+          button.classList.add('bg-slate-900', 'text-white', 'shadow-xs', 'font-semibold');
+          button.classList.remove('text-slate-600', 'font-medium');
+        });
+      });
+
+      // 4. ONG Filter Switcher (Consorcio / CARE / IRC)
       const ongButtons = document.querySelectorAll('.ong-tab-btn');
+      const kpiMetaGlobal = document.getElementById('kpi-meta-global-val');
+      const kpiAlcance = document.getElementById('kpi-alcance-val');
+      const kpiAlcancePct = document.getElementById('kpi-alcance-pct');
+      const kpiAlcanceBrecha = document.getElementById('kpi-alcance-brecha');
+      const kpiProyeccion = document.getElementById('kpi-proyeccion-val');
+      const kpiProyeccionPct = document.getElementById('kpi-proyeccion-pct');
+
+      const ongData = {
+        total: {
+          meta: '57.747',
+          alcance: '22.854',
+          alcancePct: '▲ 39,6%',
+          brecha: 'Brecha: 34.893',
+          proy: '60.224',
+          proyPct: '▲ 104,3%',
+          unicos: '14.673',
+          totales: '22.854'
+        },
+        care: {
+          meta: '28.500',
+          alcance: '11.920',
+          alcancePct: '▲ 41,8%',
+          brecha: 'Brecha: 16.580',
+          proy: '29.800',
+          proyPct: '▲ 104,5%',
+          unicos: '7.850',
+          totales: '11.920'
+        },
+        irc: {
+          meta: '29.247',
+          alcance: '10.934',
+          alcancePct: '▲ 37,4%',
+          brecha: 'Brecha: 18.313',
+          proy: '30.424',
+          proyPct: '▲ 104,0%',
+          unicos: '6.823',
+          totales: '10.934'
+        }
+      };
+
+      let currentOng = 'total';
+      let currentBeneficiariosMode = 'unicos';
+
+      function updateDashboardMetrics() {
+        const data = ongData[currentOng];
+        if (kpiMetaGlobal) kpiMetaGlobal.textContent = data.meta;
+        if (kpiAlcance) kpiAlcance.textContent = data.alcance;
+        if (kpiAlcancePct) kpiAlcancePct.innerHTML = data.alcancePct;
+        if (kpiAlcanceBrecha) kpiAlcanceBrecha.textContent = data.brecha;
+        if (kpiProyeccion) kpiProyeccion.textContent = data.proy;
+        if (kpiProyeccionPct) kpiProyeccionPct.innerHTML = data.proyPct;
+
+        if (currentBeneficiariosMode === 'totales') {
+          if (kpiTitle) kpiTitle.textContent = 'Beneficiarios totales';
+          if (kpiVal) kpiVal.textContent = data.totales;
+          if (kpiPct) kpiPct.innerHTML = data.alcancePct;
+          if (kpiMeta) kpiMeta.textContent = `Meta: ${data.meta}`;
+        } else {
+          if (kpiTitle) kpiTitle.textContent = 'Beneficiarios únicos';
+          if (kpiVal) kpiVal.textContent = data.unicos;
+          if (kpiPct) kpiPct.innerHTML = currentOng === 'total' ? '▲ 46,0%' : (currentOng === 'care' ? '▲ 48,2%' : '▲ 43,8%');
+          if (kpiMeta) kpiMeta.textContent = currentOng === 'total' ? 'Meta: 31.868' : (currentOng === 'care' ? 'Meta: 16.290' : 'Meta: 15.578');
+        }
+      }
+
       ongButtons.forEach(button => {
         button.addEventListener('click', () => {
           ongButtons.forEach(btn => {
@@ -710,10 +775,12 @@
             dot.className = 'w-1.5 h-1.5 rounded-full bg-emerald-400';
             button.appendChild(dot);
           }
+          currentOng = button.getAttribute('data-filter') || 'total';
+          updateDashboardMetrics();
         });
       });
 
-      // 4. Toggle "Únicos" / "Totales" interaction
+      // 5. Toggle "Únicos" / "Totales" interaction
       const beneficiariosToggleBtns = document.querySelectorAll('.beneficiarios-toggle-btn');
       const kpiTitle = document.getElementById('kpi-beneficiarios-title');
       const kpiVal = document.getElementById('kpi-beneficiarios-val');
@@ -729,27 +796,43 @@
           button.classList.add('bg-slate-900', 'text-white', 'shadow-xs', 'font-semibold');
           button.classList.remove('text-slate-600', 'font-medium');
 
-          const mode = button.getAttribute('data-mode');
-          if (mode === 'totales') {
-            if (kpiTitle) kpiTitle.textContent = 'Beneficiarios totales';
-            if (kpiVal) kpiVal.textContent = '22.854';
-            if (kpiPct) kpiPct.innerHTML = '▲ 39,6%';
-            if (kpiMeta) kpiMeta.textContent = 'Meta: 57.747';
-          } else {
-            if (kpiTitle) kpiTitle.textContent = 'Beneficiarios únicos';
-            if (kpiVal) kpiVal.textContent = '14.673';
-            if (kpiPct) kpiPct.innerHTML = '▲ 46,0%';
-            if (kpiMeta) kpiMeta.textContent = 'Meta: 31.868';
+          currentBeneficiariosMode = button.getAttribute('data-mode') || 'unicos';
+          updateDashboardMetrics();
+        });
+      });
+
+      // 6. Navigation items active state switching
+      const navItems = document.querySelectorAll('.nav-item');
+      navItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+          e.preventDefault();
+          navItems.forEach(link => {
+            link.classList.remove('text-slate-900', 'bg-slate-100/90', 'font-semibold');
+            link.classList.add('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-50', 'font-medium');
+            const icon = link.querySelector('.nav-icon');
+            if (icon) {
+              icon.classList.remove('text-slate-700', 'text-slate-900');
+              icon.classList.add('text-slate-400');
+            }
+          });
+          item.classList.add('text-slate-900', 'bg-slate-100/90', 'font-semibold');
+          item.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-50', 'font-medium');
+          const icon = item.querySelector('.nav-icon');
+          if (icon) {
+            icon.classList.add('text-slate-700');
+            icon.classList.remove('text-slate-400');
           }
         });
       });
 
-      // 5. Reset Filters logic
-      btnResetFilters.addEventListener('click', () => {
-        document.querySelectorAll('#filter-drawer select').forEach(select => {
-          select.selectedIndex = 0;
+      // 7. Reset Filters logic
+      if (btnResetFilters) {
+        btnResetFilters.addEventListener('click', () => {
+          document.querySelectorAll('#filter-drawer select').forEach(select => {
+            select.selectedIndex = 0;
+          });
         });
-      });
+      }
     });
   </script>
 <!-- END: ClientInteractivityScript -->
